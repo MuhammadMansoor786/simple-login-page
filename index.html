@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration Portal</h1>
+        <p>Web Engineering Lab</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Register Student</h2>
+
+            <!-- The action points to our new server route -->
+<form action="/register-student" method="POST">
+    
+    <!-- Make sure each input has a specific 'name' -->
+    <input type="text" name="fullName" placeholder="Full Name" required>
+    
+    <input type="email" name="email" placeholder="Email Address" required>
+    
+    <select name="department" required>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Software Engineering">Software Engineering</option>
+    </select>
+    
+    <input type="text" name="semester" placeholder="Semester" required>
+    
+    <!-- Ensure your button type is submit -->
+    <button type="submit">Register Student</button>
+</form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Engineering Lab</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
